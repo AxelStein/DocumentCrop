@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/camera_preview_fragment">
+
+    <fragment
+        android:id="@+id/camera_preview_fragment"
+        android:name="com.axel_stein.document_crop.CameraPreviewFragment"
+        android:label="CameraPreviewFragment" >
+        <action
+            android:id="@+id/action_open_cropped_preview"
+            app:destination="@id/cropped_preview_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cropped_preview_fragment"
+        android:name="com.axel_stein.document_crop.CroppedPreviewFragment"
+        android:label="CroppedPreviewFragment" />
+</navigation>
